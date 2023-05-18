@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listagem Pókemon</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap");
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap"
+      rel="stylesheet"
+    />
+
+<!--serve para linkar os comandos CSS com a pagina HTML-->
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/estilos.css" />
+    <link rel="stylesheet" href="./src/css/scrollbar.css">
+    
+  </head>
+
+  <body>
+    <header>
+      <a href="#">
+        <!-- "./"   significa raiz, pode ser colocado tambem um link na imagem, "#" funciona no GuitHub-->
+        <img src="./src/imagens/Poké_Ball.png" alt="pokebola" class="logo" />
+      </a>
+      <button id="botao-alterar-tema">
+        <img
+          src="./src/imagens/sol.png"
+          alt="imagem sol"
+          class="imagem-botao"
+        />
+      </button>
+    </header>
+
+    <main>
+      <ul class="listagem-pokemon">
+        <li class="cartao-pokemon">
+          <div class="informacoes">
+            <span>Bulbasaur</span>
+            <span>#001</span>
+          </div>
+
+          <img src="./src/imagens/bulbasaur.gif" alt="Bulbasaur" class="gif" />
+
+          <ul class="tipos">
+            <li class="tipo grama">Grama</li>
+            <li class="tipo veneno">Veneno</li>
+          </ul>
+
+          <p class="descricao">
+            Há uma semente de planta nas suas costas desde o dia que o Pókemon
+            nasce. A semente cresce lentamente.
+          </p>
+        </li>
+
+        <li class="cartao-pokemon">
+          <div class="informacoes">
+            <span>Ivysaur</span>
+            <span>#002</span>
+          </div>
+
+          <img src="./src/imagens/ivysaur.gif" alt="Ivysaur" class="gif" />
+
+          <ul class="tipos">
+            <li class="tipo grama">Grama</li>
+            <li class="tipo veneno">Veneno</li>
+          </ul>
+
+          <p class="descricao">
+            Quando o Bulbo em suas costas crescem, parecem perder a capacidade
+            de ficar de pé em suas passtas trazeiras.
+          </p>
+        </li>
+
+        <li class="cartao-pokemon">
+          <div class="informacoes">
+            <span>Venusaur</span>
+            <span>#003</span>
+          </div>
+
+          <img src="./src/imagens/Venusaur.gif" alt="Venusaur" class="gif" />
+
+          <ul class="tipos">
+            <li class="tipo grama">Grama</li>
+            <li class="tipo veneno">Veneno</li>
+          </ul>
+
+          <p class="descricao">
+            Sua planta floresce quando está absorvendo energia solar.Ele
+            permanece em movimento para buscar a luz solar
+          </p>
+        </li>
+
+        <li class="cartao-pokemon">
+          <div class="informacoes">
+            <span>Charmander</span>
+            <span>#004</span>
+          </div>
+
+          <img
+            src="./src/imagens/Charmander.gif"
+            alt="Charmander"
+            class="gif"
+          />
+
+          <ul class="tipos">
+            <li class="tipo fogo">Fogo</li>
+          </ul>
+
+          <p class="descricao">
+            Tem prefereencia por coisas quentes.Quando chove, diz-se que o vapor
+            jorra da ponta de sua calda.
+          </p>
+        </li>
+
+        <li class="cartao-pokemon">
+          <div class="informacoes">
+            <span>Bulbasaur</span>
+            <span>#005</span>
+          </div>
+
+          <img
+            src="./src/imagens/Charmeleon.gif"
+            alt="Charmeleon"
+            class="gif"
+          />
+
+          <ul class="tipos">
+            <li class="tipo fogo">Fogo</li>
+          </ul>
+
+          <p class="descricao">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolorem
+            quibusdam ipsum illo, neque, architecto laborum assumenda facere
+            labore eius nemo atque ut reiciendis officia consequatur minima
+            molestias recusandae fugit.
+          </p>
+        </li>
+
+        <li class="cartao-pokemon">
+          <div class="informacoes">
+            <span>Charizard</span>
+            <span>#006</span>
+          </div>
+
+          <img src="./src/imagens/Charizard.gif" alt="Charizard" class="gif" />
+
+          <ul class="tipos">
+            <li class="tipo fogo">Fogo</li>
+          </ul>
+
+          <p class="descricao">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit quidem
+            voluptas nisi repudiandae nostrum voluptatem pariatur numquam,
+            doloribus delectus eaque corrupti quos ab tempore ratione architecto
+            perspiciatis est ad vitae.
+          </p>
+        </li>
+
+        <li class="cartao-pokemon">
+          <div class="informacoes">
+            <span>Squirtle</span>
+            <span>#007</span>
+          </div>
+
+          <img src="./src/imagens/Squirtle.gif" alt="Squirtle" class="gif" />
+
+          <ul class="tipos">
+            <li class="tipo agua">Água</li>
+          </ul>
+
+          <p class="descricao">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio at
+            deserunt, aliquid nulla laboriosam animi distinctio nobis porro
+            commodi sint aspernatur incidunt non aliquam! Veritatis quidem
+            voluptate quam. Illum, nostrum?
+          </p>
+        </li>
+
+        <li class="cartao-pokemon">
+          <div class="informacoes">
+            <span>Wartortle</span>
+            <span>#008</span>
+          </div>
+
+          <img src="./src/imagens/Wartortle.gif" alt="Wartortle" class="gif" />
+
+          <ul class="tipos">
+            <li class="tipo agua">Água</li>
+          </ul>
+
+          <p class="descricao">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            ratione dignissimos quaerat nihil temporibus nesciunt incidunt,
+            earum cumque delectus hic aut aspernatur nam officia iste minus
+            accusantium sit voluptatibus magnam?
+          </p>
+        </li>
+
+        <li class="cartao-pokemon">
+          <div class="informacoes">
+            <span>Blastoise</span>
+            <span>#009</span>
+          </div>
+
+          <img src="./src/imagens/Blastoise.gif" alt="Blastoise" class="gif" />
+
+          <ul class="tipos">
+            <li class="tipo agua">Água</li>
+          </ul>
+
+          <p class="descricao">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            sunt, sit totam fuga repellendus illum. Amet, repellat accusamus?
+            Quibusdam odio ratione architecto saepe molestiae corporis vero esse
+            ex dolorem vel!
+          </p>
+        </li>
+
+        <li class="cartao-pokemon">
+          <div class="informacoes">
+            <span>Carterpie</span>
+            <span>#010</span>
+          </div>
+
+          <img src="./src/imagens/Carterpie.gif" alt="Carterpie" class="gif" />
+
+          <ul class="tipos">
+            <li class="tipo agua">Água</li>
+          </ul>
+
+          <p class="descricao">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
+            amet, perspiciatis sit tenetur, ad repellat eos soluta architecto
+            cupiditate explicabo ipsam quam veritatis. Maiores vitae non ullam
+            dolor. Cupiditate, alias.
+          </p>
+        </li>
+      </ul>
+    </main>
+
+<!--serve para linkar os comandos "JAVASCRIPT" com a pagina HTML-->
+    <script src="./src/js/index.js"></script>
+
+
+  </body>
+</html>

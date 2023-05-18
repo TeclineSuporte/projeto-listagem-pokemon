@@ -1,0 +1,151 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  /* justify-content: center; */
+  max-width: auto;
+  margin: 0 ;
+  background-color: antiquewhite;
+  color: rgb(0, 0, 0);
+  
+  }
+
+body.modo-escuro{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}  
+
+header{
+  margin: 0;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+header .logo,
+header .imagem-botao{
+  width: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+/* tirar o quadrado branco do botão "SOL"*/
+header #botao-alterar-tema{ 
+  background: none;
+  border: none;
+ }
+
+/*dar enfaze nos botoes quando passar o mouse*/
+header .logo:hover,
+header .imagem-botao:hover{
+  transform: scale(1.50); /*define a escala de tamanho do aumento da imagem ao passar o mouse*/
+  cursor: pointer; /*aparece a mãozinha ao passar o mouse no botão */
+}
+
+main{
+  /* background-color: antiquewhite; */
+  padding: 25px;  
+}
+
+
+main .listagem-pokemon{
+/*ja vem por padrão a flex-direction: row (serve para colocar em linha os itens da lista)*/
+  display: flex; 
+
+  flex-wrap: wrap;/*serve para poder fixar a largura(width) no cartao-pokemon ele faz a quebra de listagem para nao precisar da barra de scrol horizontal */
+  
+  gap:30px; /*serve para dar espaçamento na listagem ou seja nos cartões pokemon*/ 
+
+  
+  justify-content: center; /*centralizar a lista ou cartões pokemon*/
+}
+
+main .cartao-pokemon{
+  background-color: rgb(205, 229, 248); /*cor de fundo dos cartões*/
+  width: 200px; /*Largura dos cartões*/
+  padding: 15px; /*espaçamento interno no cartão (bordas)*/
+  display: flex; /*por padrão o flex-direction é row(em linha) para mudar deve adicionar o flex-direction: column(em coluna) obs: o display flex precisa como regra ser colocado sempre na proprirdade pai*/
+  flex-direction: column; /*coloca os itens dentro do cartão em coluna*/
+  align-items: center; /*alinha os itens dentro do cartão ao centro*/
+  gap: 15px; /*cria um espaçamento dos itens dentro dos cartões*/
+  border-radius: 20px; /*cria uma borda aredondada nos cartões*/
+  transition: 0.2s ease-in-out; /*transição com duração de 0.2s quando entra e quando sai o cursor da imagem*/
+}
+
+main .cartao-pokemon:hover{
+  transform: scale(1.07); /*define a escala de tamanho do aumento da imagem ao passar o mouse*/
+  cursor: pointer; /*aparece a mãozinha ao passar o mouse no botão */
+}
+
+
+main .cartao-pokemon:hover{
+  background-color: aquamarine;
+}
+
+.modo-escuro .cartao-pokemon{
+  background-color: darkslategray;
+}
+
+
+
+main .cartao-pokemon .informacoes{
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgb(49, 49, 49);
+  border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span{ 
+  /* background-color: blue; */
+  padding: 5px;
+  text-transform: uppercase; /*altera as letras tudo para caixa alta*/
+  font-size: 17px;
+}
+
+main .cartao-pokemon .gif{  /*padronizar o tamanho das imagens dentro dos cartões*/
+  width: 90x;
+  height: 90px;
+}
+
+main .cartao-pokemon .tipos{
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  /* border: 1px solid rgb(49, 49, 49); */
+  border-radius: 10px;
+}
+
+main .cartao-pokemon .tipo{
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.grama{
+  background-color: rgb(65, 155, 87);
+}
+
+.veneno{
+  background-color: rgb(238, 154, 231);
+}
+
+.fogo{
+  background-color: rgb(197, 87, 47);
+}
+
+.agua{
+  background-color: aqua;
+}
+
+.inseto{
+  background-color: darkolivegreen;
+}
+
+main .descricao{
+  max-height: 80px;
+  overflow-y: scroll;
+  font-size: 14px;
+  font-style: oblique;
+  /* font: optional; */
+  padding-right: 10px;
+  /* justify-content: center; */
+  /* align-content: center; */
+}
+

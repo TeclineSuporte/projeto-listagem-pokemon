@@ -1,0 +1,9 @@
+*{
+  margin: 10; /* aumenta ou diminui margem externa */
+  padding: 0; /* aumenta ou diminui margem interna */
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+}
